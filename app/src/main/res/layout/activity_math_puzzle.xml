@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="40dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".MathPuzzleActivity">
+
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/new_rocker"
+        android:text="New Game"
+        android:textColor="#065E8E"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:backgroundTint="#00000000"
+
+        />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/new_rocker"
+        android:text="Exit"
+        android:textColor="#065E8E"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:backgroundTint="#00000000" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:layout_below="@id/new_game_button"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/ButtonStyle"
+                android:layout_toEndOf="@+id/button2"
+                android:layout_toRightOf="@+id/button2"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_toEndOf="@+id/button3"
+                android:layout_toRightOf="@+id/button3"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_below="@+id/button1"
+                style="@style/ButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_below="@+id/button1"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_below="@+id/button1"
+                android:layout_toEndOf="@+id/button2"
+                android:layout_toRightOf="@+id/button2"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_below="@+id/button1"
+                android:layout_toEndOf="@+id/button3"
+                android:layout_toRightOf="@+id/button3"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_below="@+id/button5"
+                style="@style/ButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_below="@+id/button5"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_below="@+id/button5"
+                android:layout_toEndOf="@+id/button6"
+                android:layout_toRightOf="@+id/button6"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_below="@+id/button5"
+                android:layout_toEndOf="@+id/button7"
+                android:layout_toRightOf="@+id/button7"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_below="@+id/button9"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_below="@+id/button9"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_below="@+id/button9"
+                android:layout_toEndOf="@+id/button2"
+                android:layout_toRightOf="@+id/button2"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_below="@+id/button9"
+                android:layout_toEndOf="@+id/button3"
+                android:layout_toRightOf="@+id/button3"
+                style="@style/ButtonStyle"/>
+        </RelativeLayout>
+
+</FrameLayout>
